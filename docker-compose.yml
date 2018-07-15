@@ -1,0 +1,79 @@
+# v2 syntax
+version: '2'
+
+# Named volumes
+volumes:
+  # Postgres Data
+  hackcity-postgres-data:
+    driver: local
+
+  # MySQL Data
+  hackcity-mysql-data:
+    driver: local
+
+  # Redis Data
+  hackcity-redis-data:
+    driver: local
+
+services:
+  # Postgres (10.3)
+  postgres:
+    image: postgres:10.3
+    container_name: hackcity-postgres
+    volumes:
+      - hackcity-postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=hackcity
+      - POSTGRES_DB=hackcity
+      - POSTGRES_USER=hackcity
+
+  # MySQL (5.7)
+  mysql:
+    image: mysql:5.7
+    container_name: hackcity-mysql
+    volumes:
+      - hackcity-mysql-data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=hackcity
+      - MYSQL_DATABASE=hackcity
+      - MYSQL_USER=hackcity
+      - MYSQL_PASSWORD=hackcity
+
+  # Redis
+  cache:
+    image: redis:4.0
+    container_name: hackcity-redis
+    command: --appendonly yes
+    volumes:
+      - hackcity-redis-data:/data
+    ports:
+      - "6379:6379"
+
+  # PHP (with Nginx)
+  # you can change from nginx to apache, just change session 'image'
+  app:
+    image: ambientum/php:7.2-nginx
+    container_name: hackcity-app
+    volumes:
+      - .:/var/www/app
+    ports:
+      - "80:8080"
+    links:
+      - postgres
+      - mysql
+      - cache
+
+  # Laravel Queues
+  queue:
+    image: ambientum/php:7.2
+    container_name: hackcity-queue
+    command: php artisan queue:listen
+    volumes:
+      - .:/var/www/app
+    links:
+      - mysql
+      - cache
