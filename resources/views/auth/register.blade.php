@@ -124,11 +124,11 @@
                                                 <div class="row">
                                                     <div class="form-group col-sm-6">
                                                         <label for="">Telefone</label>
-                                                        <input type="text" name="telefone" class="form-control"/>
+                                                        <input type="text" name="telefone" class="form-control" required/>
                                                     </div>
                                                     <div class="form-group col-sm-6">
                                                         <label for="">Data de Nascimento</label>
-                                                        <input type="text" name="dtNascimento" class="form-control"/>
+                                                        <input type="text" name="dtNascimento" class="form-control" placeholder="dd/mm/yyyy" required/>
                                                     </div>
                                                 </div>
                                 
@@ -331,3 +331,17 @@
       </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAvxtG8x2ewCxDo8Fj4B99PC8cTG9RNqM&libraries=places&callback=initMap"
           async defer></script>
+
+          @section("scripts")
+          <script>
+
+            $(function(){
+              $("form").submit(function(event){
+                if($("#endereco").val() === ""){
+                  alert("O campo endereço é obrigatório!");
+                  event.preventDefault();
+                }
+              });
+            });
+          </script>
+          @endsection

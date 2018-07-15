@@ -167,14 +167,14 @@
                                 <img class="img-fluid" src="img/google.png" alt="">
 
                             <div class="caption text-center mt-20">
-                                <h6 class="text-uppercase">20%</h6>
+                                {{-- <h6 class="text-uppercase">20%</h6> --}}
                                 <p></p>
                             </div>
                         </div>
                         <div class="item">
                             <img class="img-fluid" src="img/campus.png" alt="">
                             <div class="caption text-center mt-20">
-                                <h6 class="text-uppercase">10%</h6>
+                                {{-- <h6 class="text-uppercase">10%</h6> --}}
                                 <p></p>
                             </div>
                         </div>
@@ -182,7 +182,7 @@
                                 <img class="img-fluid" src="img/academia.png" alt="">
 
                             <div class="caption text-center mt-20">
-                                <h6 class="text-uppercase">15%</h6>
+                                {{-- <h6 class="text-uppercase">15%</h6> --}}
                                 <p></p>
                             </div>
                         </div>
@@ -279,7 +279,7 @@
                 
                                 </div>
 
-                        <a href="{{route('register')}}" class="primary-btn2 header-btn text-uppercase">Cadastre-se!</a>
+                        <a href="{{route('register')}}">Cadastre-se!</a>
                         </div>
                     </div>
                 </div>		

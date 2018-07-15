@@ -207,7 +207,7 @@
 
             <div class="row">
                 <div class="form-group col-sm-12">
-                        <button type="submit" class="btn btn-primary">Gravar</button>
+                        <button type="submit" class="btn btn-primary btn-block">Gravar</button>
                 </div>
             </div>
         </form>
@@ -312,3 +312,17 @@
               </script>
               <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY8OydRnSxbecVBCDrc0TjCGPGyougJx0&libraries=places&callback=initMap"
                   async defer></script>
+
+                  @section("scripts")
+                  <script>
+        
+                    $(function(){
+                      $("form").submit(function(event){
+                        if($("#endereco").val() === ""){
+                          alert("O campo endereço é obrigatório!");
+                          event.preventDefault();
+                        }
+                      });
+                    });
+                  </script>
+                  @endsection
