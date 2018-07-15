@@ -206,24 +206,15 @@
                                                                     <span id="place-address"></span>
                                                                   </div>
                                                     </div>
-                                                    </div>
-                                                    <div class="row">
-                                                            <div class="form-group col-sm-12">
-                                                                    <button type="submit" class="btn btn-primary btn-block">
-                                                                            {{ __('Criar conta') }}
-                                                                        </button>
-                                                            </div>
-                                                        </div>
+                                                    
                                                 </div>
-        
-        
-                                                {{-- <div class="row">
-                                                        <div class="form-group col-sm-12">
-                                                                
-                                                    <label for="">Endereço*</label>
-                                                    <input type="text" id="endereco" name="endereco" class="form-control" disabled/>
-                                                        </div>
-                                                </div> --}}
+                                                <div class="row">
+                                                    <div class="form-group col-sm-12">
+                                                            <button type="submit" class="btn btn-primary btn-block">
+                                                                    {{ __('Criar conta') }}
+                                                                </button>
+                                                    </div>
+                                                  </div>
         
                                 
                                                 

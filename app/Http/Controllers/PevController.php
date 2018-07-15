@@ -43,14 +43,15 @@ class PevController extends Controller
     {
         $item = new Pev;
         $item->name = $request->name;
-        $item->cep = $request->cep;
+        // $item->cep = $request->cep;
         $item->endereco = $request->endereco;
-        $item->numero = $request->numero;
-        $item->dias = 1; //TODO: Verificar pq n esta aceitando array
+        // $item->numero = $request->numero;
+        // $item->dias = 1; //TODO: Verificar pq n esta aceitando array
         $item->email = $request->email;
         $item->telefone = $request->telefone;
-        $item->tiposResiduos = 2;  //TODO: Verificar pq n esta aceitando array
+        // $item->tiposResiduos = 2;  //TODO: Verificar pq n esta aceitando array
         $item->responsavel = $request->responsavel;
+        $item->latLong = $request->latlng;
         // dd($item);
 
         $item->save();

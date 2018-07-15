@@ -16,13 +16,14 @@ class AddPev extends Migration
         Schema::create('pevs', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('cep');
+            // $table->string('cep');
             $table->string('endereco');
-            $table->string('numero');
+            // $table->string('numero');
             $table->string('telefone');
             $table->string('responsavel');
-            $table->enum('dias', [0,1,2,3,4,5,6]);
-            $table->enum('tiposResiduos', [0, 1, 2]);
+            $table->string('latLong');
+            // $table->enum('dias', [0,1,2,3,4,5,6]);
+            // $table->enum('tiposResiduos', [0, 1, 2]);
             $table->string('email')->unique();
             $table->timestamps();
         });

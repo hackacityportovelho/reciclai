@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Pev extends Model
 {
     protected $table = 'pevs';
-    protected $fillable = ['name', 'endereco', 'cep', 'numero', 'telefone', 'bairro', 'email', 'responsavel', 'dias','tiposResiduos'];
+    protected $fillable = ['name', 'endereco', 'telefone', 'email', 'responsavel','latLong'];
     public $timestamps = true;
 }
