@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <!-- Site Title -->
     <title>Creative Agency</title>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
         <!--
         CSS
@@ -34,7 +34,7 @@
             <nav class="navbar navbar-expand-lg  navbar-light">
                 <div class="container">
                       <a class="navbar-brand" href="index.html">
-                          <img src="img/logo.png" alt="">
+                          <img src="img/logo.png" width="100" height="50" alt="">
                       </a>
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -42,14 +42,14 @@
 
                       <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                         <ul class="navbar-nav">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#service">Service</a></li>
-                            <li><a href="#project">project</a></li>
-                            <li><a href="#blog">blog</a></li>
-                            <li><a href="#team">team</a></li>
+                                <li><a href="#home">Home</a></li>
+                            <li><a href="#service">Missão</a></li>
+                            <li><a href="#objetivo">Objetivo</a></li>
+                            <li><a href="#blog">Cadastre-se</a></li>
+                            {{-- <li><a href="#team">team</a></li> --}}
                             <li><a href="{{route('login')}}">Login</a></li>
                            <!-- Dropdown -->
-                            <li class="dropdown">
+                            {{-- <li class="dropdown">
                               <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                                 Pages
                               </a>
@@ -57,7 +57,7 @@
                                 <a class="dropdown-item" href="generic.html">Generic</a>
                                 <a class="dropdown-item" href="elements.html">Elements</a>
                               </div>
-                            </li>									
+                            </li>									 --}}
                         </ul>
                       </div>						
                 </div>
@@ -71,10 +71,8 @@
             <div class="container">
                 <div class="row fullscreen  d-flex align-items-center justify-content-end">
                     <div class="banner-content col-lg-6 col-md-12">
-                        <h1>
-                            We Provide  <br>
-                            <span>Solutions</span> that <br>
-                            Brings <span>Joy</span>							
+                        <h1 style="font-size: 45px">
+                            Somos sustentabilidade, inovação e ATITUDE.
                         </h1>
                         <a href="{{route('register')}}" class="primary-btn2 header-btn text-uppercase">Junte-se a nós!</a>
                     </div>												
@@ -90,44 +88,39 @@
                 <div class="row d-flex justify-content-center">
                     <div class="menu-content pb-70 col-lg-8">
                         <div class="title text-center">
-                            <h1 class="mb-10">Latest News from all categories</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.</p>
+                            <h1 class="mb-10">Nossa missão</h1>
+                            <p>
+                                    Conectar pessoas por meio de um objetivo: <br/>Promover a sustentabilidade através da coleta inteligente de recicláveis e incentivar quem abraça a causa.					                                
+                            </p>
                         </div>
                     </div>
                 </div>	
                 <div class="row">
-                    <div class="sigle-service col-lg-3 col-md-6">
+                    <div class="sigle-service col-lg-4 col-md-4">
                         <span class="lnr lnr-rocket"></span>
-                        <h4>Easy Flight Search</h4>
+                        <h4>Inspiração</h4>
                         <p>
-                            inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
+                                O resido reciclável é uma ferramenta importante para o solução sustentável.
                         </p>
-                        <a href="#" class="text-uppercase primary-btn2 primary-border circle">View Details</a>
+                        {{-- <a href="#" class="text-uppercase primary-btn2 primary-border circle">View Details</a> --}}
                     </div>
-                    <div class="sigle-service col-lg-3 col-md-6">
+                    <div class="sigle-service col-lg-4 col-md-4">
                         <span class="lnr lnr-magic-wand"></span>
-                        <h4>Get Hotel Offers</h4>
+                        <h4>Crença</h4>
                         <p>
-                            inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
+                                O coletivo é o caminho para solucionar questões ambientais dos resíduos  sustentáveis. Chamamos isso de responsabilidade consciente.
+
                         </p>
-                        <a href="#" class="text-uppercase primary-btn2 primary-border circle">View Details</a>
+                        {{-- <a href="#" class="text-uppercase primary-btn2 primary-border circle">View Details</a> --}}
                     </div>
-                    <div class="sigle-service col-lg-3 col-md-6">
+                    <div class="sigle-service col-lg-4 col-md-4">
                         <span class="lnr lnr-gift"></span>
-                        <h4>Holiday Packages</h4>
+                        <h4>Propósito</h4>
                         <p>
-                            inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
+                                Ativar uma rede articulando e integrando produto, consumo, e pós-consumo nas cadeias em que os resíduos recicláveis estão inseridos.
                         </p>
-                        <a href="#" class="text-uppercase primary-btn2 primary-border circle">View Details</a>
-                    </div>
-                    <div class="sigle-service col-lg-3 col-md-6">
-                        <span class="lnr lnr-phone"></span>
-                        <h4>Dedicated Support</h4>
-                        <p>
-                            inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
-                        </p>
-                        <a href="#" class="text-uppercase primary-btn2 primary-border circle">View Details</a>
-                    </div>																		
+                        {{-- <a href="#" class="text-uppercase primary-btn2 primary-border circle">View Details</a> --}}
+                    </div>																	
 
                 </div>
             </div>	
@@ -136,22 +129,19 @@
 
 
         <!-- Start About Area -->
-        <section class="about-area">
+        <section class="about-area" id="objetivo">
             <div class="container-fluid">
                 <div class="row justify-content-end align-items-center d-flex no-padding">
                     <div class="col-lg-6 about-left mt-70">
-                        <h1>We can be your digital <br>
-                        Problems Solution Partner</h1>
+                        <h1>Objetivo</h1>
                         <p>
-                            inappropriate behavior is often laughed off as “boys will be <br> boys,” women face higher conduct standards especially <br> in the workplace. That’s why it’s crucial that, as women, our <br> behavior on the job is beyond reproach.
+                                Através um app simples, buscamos desenvolver uma cultura de reciclagem nos cidadãos da nossa cidade, ao passo que esses contribuam para preservação do meio ambiente.
+
                         </p>
-                        <div class="buttons">
-                            <a href="#" class="about-btn text-uppercase primary-border circle">What we offer</a>
-                            <a href="#" class="about-btn text-uppercase  primary-border circle">Get a free quote</a>
-                        </div>
+                        
                     </div>
                     <div class="col-lg-6 about-right">
-                        <img class="img-fluid" src="img/about.png" alt="">
+                        {{-- <img class="img-fluid" src="img/about.png" alt=""> --}}
                     </div>
                 </div>
             </div>	
@@ -160,13 +150,13 @@
 
 
         <!-- Start project Area -->
-        <section class="project-area section-gap" id="project">
+        {{-- <section class="project-area section-gap" id="project">
             <div class="container">
                 <div class="row d-flex justify-content-center">
                     <div class="menu-content pb-40 col-lg-8">
                         <div class="title text-center">
                             <h1 class="mb-10">Latest Project on the go</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore  et dolore magna aliqua.</p>
+                            <p>O resido reciclável é uma ferramenta importante para o solução sustentável.</p>
                         </div>
                     </div>
                 </div>						
@@ -175,22 +165,22 @@
                         <div class="item">
                             <img class="img-fluid" src="img/project.jpg" alt="">
                             <div class="caption text-center mt-20">
-                                <h6 class="text-uppercase">Vector Illustration</h6>
-                                <p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have <br> allowed humanity to create slimmer, more portable technology.</p>
+                                <h6 class="text-uppercase">Inspiração</h6>
+                                <p></p>
                             </div>
                         </div>
                         <div class="item">
                             <img class="img-fluid" src="img/project.jpg" alt="">
                             <div class="caption text-center mt-20">
-                                <h6 class="text-uppercase">Vector Illustration</h6>
-                                <p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have <br> allowed humanity to create slimmer, more portable technology.</p>
+                                <h6 class="text-uppercase">Crença</h6>
+                                <p>O coletivo é o caminho para solucionar questões ambientais dos resíduos  sustentáveis. Chamamos isso de responsabilidade consciente.</p>
                             </div>
                         </div>
                         <div class="item">
                             <img class="img-fluid" src="img/project.jpg" alt="">
                             <div class="caption text-center mt-20">
-                                <h6 class="text-uppercase">Vector Illustration</h6>
-                                <p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have <br> allowed humanity to create slimmer, more portable technology.</p>
+                                <h6 class="text-uppercase">Propósito</h6>
+                                <p>Ativar uma rede articulando e integrando produto, consumo, e pós-consumo nas cadeias em que os resíduos recicláveis estão inseridos.</p>
                             </div>
                         </div>
                         <div class="item">
@@ -210,12 +200,12 @@
                     </div>
                 </div>
             </div>	
-        </section>
+        </section> --}}
         <!-- End project Area -->
         
     
         <!-- Start skill Area -->
-        <section class="skill-area section-gap">
+        {{-- <section class="skill-area section-gap">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 skill-left">
@@ -242,121 +232,14 @@
                     </div>
                 </div>
             </div>	
-        </section>
+        </section> --}}
         <!-- End skill Area -->
         
         
         <!-- Start team Area -->
-        <section class="team-area section-gap" id="team">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="menu-content pb-70 col-lg-8">
-                        <div class="title text-center">
-                            <h1 class="mb-10">About Creative Agency Team</h1>
-                            <p>Who are in extremely love with eco friendly system.</p>
-                        </div>
-                    </div>
-                </div>						
-                <div class="row justify-content-center d-flex align-items-center">
-                    <div class="col-md-3 single-team">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/t1.jpg" alt="">
-                            <div class="align-items-center justify-content-center d-flex">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="meta-text mt-30 text-center">
-                            <h4>Ethel Davis</h4>
-                            <p>Managing Director (Sales)</p>									    	
-                        </div>
-                    </div>
-                    <div class="col-md-3 single-team">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/t2.jpg" alt="">
-                            <div class="align-items-center justify-content-center d-flex">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="meta-text mt-30 text-center">
-                            <h4>Rodney Cooper</h4>
-                            <p>Creative Art Director (Project)</p>			    	
-                        </div>
-                    </div>	
-                    <div class="col-md-3 single-team">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/t3.jpg" alt="">
-                            <div class="align-items-center justify-content-center d-flex">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="meta-text mt-30 text-center">
-                            <h4>Dora Walker</h4>
-                            <p>Senior Core Developer</p>			    	
-                        </div>
-                    </div>	
-                    <div class="col-md-3 single-team">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/t4.jpg" alt="">
-                            <div class="align-items-center justify-content-center d-flex">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="meta-text mt-30 text-center">
-                            <h4>Lena Keller</h4>
-                            <p>Creative Content Developer</p>			    	
-                        </div>
-                    </div>																									
-            
-                </div>
-            </div>	
-        </section>
         <!-- End team Area -->
 
 
-        <!-- Start testimonial Area -->
-        <section class="testimonial-area relative section-gap">
-            <div class="overlay overlay-bg"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="active-testimonial">
-                        <div class="single-testimonial item d-flex flex-row">
-                            <div class="thumb">
-                                <img class="img-fluid" src="img/user1.png" alt="">
-                            </div>
-                            <div class="desc">
-                                <p>
-                                    Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.
-                                </p>
-                                <h4 mt-30>Mark Alviro Wiens</h4>
-                                <p>CEO at Google</p>
-                            </div>
-                        </div>
-                        <div class="single-testimonial item d-flex flex-row">
-                            <div class="thumb">
-                                <img class="img-fluid" src="img/user2.png" alt="">
-                            </div>
-                            <div class="desc">
-                                <p>
-                                    Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.
-                                </p>
-                                <h4 mt-30>Mark Alviro Wiens</h4>
-                                <p>CEO at Google</p>
-                            </div>
-                        </div>								
-                    </div>					
-                </div>
-            </div>	
-        </section>
-        <!-- End testimonial Area -->
-        
 
         <!-- start blog Area -->		
         <section class="blog-area section-gap" id="blog">
@@ -364,65 +247,39 @@
                 <div class="row d-flex justify-content-center">
                     <div class="menu-content pb-70 col-lg-8">
                         <div class="title text-center">
-                            <h1 class="mb-10">Latest From Our Blog</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.</p>
+                            <h1 class="mb-10">Faça parte!</h1><br/>
+                            <p>Abrace a ideia e seja um amigo do meio ambiente</p>
+
+                            <div class="row">
+                                    <div class="sigle-service col-lg-4 col-md-6">
+                                        {{-- <span class="lnr lnr-rocket"></span> --}}
+                                        <i class="fas fa-users fa-7x"></i>
+                                        <h4>Doador</h4>
+                                        <p>
+                                                Faça diferente, entregue seus resíduos de papel, plástico, e metal nos Pontos de Entrega Voluntário, e ganhe descontos de empresas patrocinadoras!
+                                        </p>
+                                    </div>
+                                    <div class="sigle-service col-lg-4 col-md-6">
+                                            <i class="fas fa-industry fa-7x"></i>
+                                        <h4>Ponto de Entrega Voluntária (PEV)</h4>
+                                        <p>
+                                                Receba os resíduos de plástico, metal e papel em seu estabelecimento, venda para um reciclador em sua cidade e pode ganhe uma renda extra, além de divulgar sua empresa!
+                                        </p>
+                                    </div>
+                                    <div class="sigle-service col-lg-4 col-md-6">
+                                            <i class="fas fa-handshake fa-7x"></i>
+                                        <h4>Patrocinador</h4>
+                                        <p>
+                                                Divulgue sua marca e conquiste uma valiosa clientela, concedendo desconto aos doadores cadastrados em nossa plataforma!
+                                        </p>
+                                    </div>																	
+                
+                                </div>
+
+                        <a href="{{route('register')}}" class="primary-btn2 header-btn text-uppercase">Cadastre-se!</a>
                         </div>
                     </div>
-                </div>					
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 single-blog">
-                        <img class="img-fluid" src="img/b1.jpg" alt="">
-                        <p class="date">10 Jan 2018</p>
-                        <h4><a href="#">Addiction When Gambling
-                        Becomes A Problem</a></h4>
-                        <p>
-                            inappropriate behavior ipsum dolor sit amet, consectetur.
-                        </p>
-                        <div class="meta-bottom d-flex justify-content-between">
-                            <p><span class="lnr lnr-heart"></span> 15 Likes</p>
-                            <p><span class="lnr lnr-bubble"></span> 02 Comments</p>
-                        </div>									
-                    </div>
-                    <div class="col-lg-3 col-md-6 single-blog">
-                        <img class="img-fluid" src="img/b2.jpg" alt="">
-                        <p class="date">10 Jan 2018</p>
-                        <h4><a href="#">Addiction When Gambling
-                        Becomes A Problem</a></h4>
-                        <p>
-                            inappropriate behavior ipsum dolor sit amet, consectetur.
-                        </p>
-                        <div class="meta-bottom d-flex justify-content-between">
-                            <p><span class="lnr lnr-heart"></span> 15 Likes</p>
-                            <p><span class="lnr lnr-bubble"></span> 02 Comments</p>
-                        </div>									
-                    </div>
-                    <div class="col-lg-3 col-md-6 single-blog">
-                        <img class="img-fluid" src="img/b3.jpg" alt="">
-                        <p class="date">10 Jan 2018</p>
-                        <h4><a href="#">Addiction When Gambling
-                        Becomes A Problem</a></h4>
-                        <p>
-                            inappropriate behavior ipsum dolor sit amet, consectetur.
-                        </p>
-                        <div class="meta-bottom d-flex justify-content-between">
-                            <p><span class="lnr lnr-heart"></span> 15 Likes</p>
-                            <p><span class="lnr lnr-bubble"></span> 02 Comments</p>
-                        </div>									
-                    </div>
-                    <div class="col-lg-3 col-md-6 single-blog">
-                        <img class="img-fluid" src="img/b4.jpg" alt="">
-                        <p class="date">10 Jan 2018</p>
-                        <h4><a href="#">Addiction When Gambling
-                        Becomes A Problem</a></h4>
-                        <p>
-                            inappropriate behavior ipsum dolor sit amet, consectetur.
-                        </p>
-                        <div class="meta-bottom d-flex justify-content-between">
-                            <p><span class="lnr lnr-heart"></span> 15 Likes</p>
-                            <p><span class="lnr lnr-bubble"></span> 02 Comments</p>
-                        </div>									
-                    </div>						
-                </div>
+                </div>		
             </div>	
         </section>
         <!-- end blog Area -->		
@@ -431,69 +288,17 @@
         <!-- start footer Area -->		
         <footer class="footer-area section-gap">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3  col-md-12">
-                        <div class="single-footer-widget">
-                            <h6>Top Products</h6>
-                            <ul class="footer-nav">
-                                <li><a href="#">Managed Website</a></li>
-                                <li><a href="#">Manage Reputation</a></li>
-                                <li><a href="#">Power Tools</a></li>
-                                <li><a href="#">Marketing Service</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6  col-md-12">
-                        <div class="single-footer-widget newsletter">
-                            <h6>Newsletter</h6>
-                            <p>You can trust us. we only send promo offers, not a single spam.</p>
-                            <div id="mc_embed_signup">
-                                <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
-
-                                    <div class="form-group row" style="width: 100%">
-                                        <div class="col-lg-8 col-md-12">
-                                            <input name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-                                            <div style="position: absolute; left: -5000px;">
-                                                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-                                            </div>
-                                        </div> 
-                                    
-                                        <div class="col-lg-4 col-md-12">
-                                            <button class="nw-btn primary-btn">Subscribe<span class="lnr lnr-arrow-right"></span></button>
-                                        </div> 
-                                    </div>		
-                                    <div class="info"></div>
-                                </form>
-                            </div>		
-                        </div>
-                    </div>
-                    <div class="col-lg-3  col-md-12">
-                        <div class="single-footer-widget mail-chimp">
-                            <h6 class="mb-20">Instragram Feed</h6>
-                            <ul class="instafeed d-flex flex-wrap">
-                                <li><img src="img/i1.jpg" alt=""></li>
-                                <li><img src="img/i2.jpg" alt=""></li>
-                                <li><img src="img/i3.jpg" alt=""></li>
-                                <li><img src="img/i4.jpg" alt=""></li>
-                                <li><img src="img/i5.jpg" alt=""></li>
-                                <li><img src="img/i6.jpg" alt=""></li>
-                                <li><img src="img/i7.jpg" alt=""></li>
-                                <li><img src="img/i8.jpg" alt=""></li>
-                            </ul>
-                        </div>
-                    </div>						
-                </div>
 
                 <div class="row footer-bottom d-flex justify-content-between">
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+        <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright &copy;<script>document.write(new Date().getFullYear());</script> </p>
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    <div class="col-lg-4 col-sm-12 footer-social">
+                    {{-- <div class="col-lg-4 col-sm-12 footer-social">
                         <a href="#"><i class="fa fa-facebook"></i></a>
                         <a href="#"><i class="fa fa-twitter"></i></a>
                         <a href="#"><i class="fa fa-dribbble"></i></a>
                         <a href="#"><i class="fa fa-behance"></i></a>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </footer>
