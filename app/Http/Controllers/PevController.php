@@ -8,9 +8,9 @@ use Illuminate\Http\Request;
 class PevController extends Controller
 {
     protected $pevs;
-    public function __construct(Pev $pevs)
+    public function __construct(Pev $pev)
     {
-        $this->pevs = $pevs;
+        $this->pev = $pev;
     }
     /**
      * Display a listing of the resource.
@@ -41,7 +41,25 @@ class PevController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        $item = new Pev;
+        $item->name = $request->name;
+        $item->cep = $request->cep;
+        $item->endereco = $request->endereco;
+        $item->numero = $request->numero;
+        $item->dias = 1; //TODO: Verificar pq n esta aceitando array
+        $item->email = $request->email;
+        $item->telefone = $request->telefone;
+        $item->tiposResiduos = 2;  //TODO: Verificar pq n esta aceitando array
+        $item->responsavel = $request->responsavel;
+        // dd($item);
+
+        $item->save();
+        // $request->dias = "0, 2";
+        // $request["tiposResiduos"] = [0,1];
+        // dd($request->all());
+
+        // $this->pev->create($request->all());
+        return redirect(route("pevs.index"));
     }
 
     /**

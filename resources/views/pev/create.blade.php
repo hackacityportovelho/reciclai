@@ -5,17 +5,37 @@
         <form action="{{route('pevs.store')}}" method="POST">
             @csrf
 
-            <label for="">Nome da empresa</label>
-            <input type="text" name="name" class="form-control"/>
+            <div class="row">
+                    <div class="form-group col-sm-12">
+                        <label for="">Nome da empresa*</label>
+                        <input type="text" name="name" class="form-control" required/>
 
-            <label for="">CEP</label>
-            <input type="text" name="cep" class="form-control"/>
-
-            <label for="">Endereço</label>
-            <input type="text" name="endereco" class="form-control"/>
-
-            <label for="">Número</label>
-            <input type="text" class="form-control" name="numero"/>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-12">
+                        
+            <label for="">CEP*</label>
+            <input type="text" name="cep" class="form-control" required/>
+                </div>
+        </div>
+        <div class="row">
+                <div class="form-group col-sm-12">
+                        
+            <label for="">Endereço*</label>
+            <input type="text" name="endereco" class="form-control" required/>
+                </div>
+        </div>
+        <div class="row">
+                <div class="form-group col-sm-12">
+                        
+            <label for="">Número*</label>
+            <input type="text" class="form-control" name="numero" required/>
+                </div>
+        </div>
+        {{-- <div class="row">
+                <div class="form-group col-sm-12">
+                        
 
             <label for="">Quais dias da semana pode ser captado o lixo?</label><br/>
             <input type="checkbox" name="dias[]" value="0"/> Domingo 
@@ -25,21 +45,40 @@
             <input type="checkbox" name="dias[]" value="4"/> Quinta feira
             <input type="checkbox" name="dias[]" value="5"/> Sexta Feira
             <input type="checkbox" name="dias[]" value="6"/> Sábado
-
+                </div>
+        </div> --}}
+        <div class="row">
+                <div class="form-group col-sm-12">
+                        
             <label for="">E-mail</label>
-            <input type="email" class="form-control" name="email"/>
+            <input type="email" class="form-control" name="email" required/>
+                </div>
+        </div>
+        <div class="row">
+                <div class="form-group col-sm-12">
+                        <label for="">Telefone</label>
+                        <input type="text" class="form-control" name="telefone" required/>
+                        
+                </div>
+        </div>
+        {{-- <div class="row">
+                <div class="form-group col-sm-12">
+                        <label for="">Tipo de resíduos</label><br/>
+                        <input type="checkbox" name="tiposResiduos[]" value="0"/> Metal
+                        <input type="checkbox" name="tiposResiduos[]" value="1"/> Plástico
+                        <input type="checkbox" name="tiposResiduos[]" value="2"/> Papel
+                        
+                </div>
+        </div> --}}
 
-            <label for="">Telefone</label>
-            <input type="text" class="form-control" name="telefone"/>
 
-            <label for="">Tipo de resíduos</label><br/>
-            <input type="checkbox" name="tiposResiduos[]" value="Metal"/> Metal
-            <input type="checkbox" name="tiposResiduos[]" value="Plástico"/> Plástico
-            <input type="checkbox" name="tiposResiduos[]" value="Papel"/> Papel
+
+
+
 
             <div class="row"><div class="form-group col-sm-12">
                     <label for="">Nome do responsável</label>
-                    <input type="text" class="form-control" placeholder="Com quem devemos falar?"/>
+                    <input type="text" class="form-control" name="responsavel" placeholder="Com quem devemos falar?" required/>
                 
             </div></div>
 
