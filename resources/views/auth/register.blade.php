@@ -122,9 +122,13 @@
                                                 </div>
 
                                                 <div class="row">
-                                                    <div class="form-group col-sm-12">
+                                                    <div class="form-group col-sm-6">
                                                         <label for="">Telefone</label>
-                                                        <input type="telefone" name="telefone" class="form-control"/>
+                                                        <input type="text" name="telefone" class="form-control"/>
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="">Data de Nascimento</label>
+                                                        <input type="text" name="dtNascimento" class="form-control"/>
                                                     </div>
                                                 </div>
                                 

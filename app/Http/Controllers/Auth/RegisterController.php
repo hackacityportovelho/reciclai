@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
+use DateTime;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -63,12 +64,15 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $date = DateTime::createFromFormat('d/m/Y', $data['dtNascimento']);
+        
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'latLong' => $data['latlng'],
             'telefone' => $data['telefone'],
             'endereco' => $data['endereco'],
+            'dtNascimento' => $date->format('Y-m-d'),
             'password' => Hash::make($data['password']),
         ]);
     }

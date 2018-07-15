@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('telefone');
             $table->string('endereco');
             $table->string('latLong');
+            $table->date('dtNascimento');
             
             $table->rememberToken();
             $table->timestamps();

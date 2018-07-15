@@ -14,7 +14,14 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="{{route('pevs.index')}}" class="btn btn-primary btn-block">
+                                
+                                
+                                PEV</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
