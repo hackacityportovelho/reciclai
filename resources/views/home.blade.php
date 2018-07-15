@@ -15,12 +15,17 @@
                     @endif
 
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <a href="{{route('pevs.index')}}" class="btn btn-primary btn-block">
                                 
                                 
                                 PEV</a>
                         </div>
+                        <div class="col-sm-6">
+                                <a href="{{route('pevs.map')}}" class="btn btn-primary btn-block">                                   
+                                    
+                                    Encontre seu ponto de entrega</a>
+                            </div>
                     </div>
                 </div>
             </div>

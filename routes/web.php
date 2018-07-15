@@ -21,3 +21,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/solicitacao', 'SolicitacaoController@create')->name('solicitacao.create');
 
 Route::resource('pevs', 'PevController')->middleware('auth');
+Route::get('/pevs-map', 'PevController@map')->name('pevs.map')->middleware('auth');

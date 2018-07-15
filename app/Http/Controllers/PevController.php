@@ -12,6 +12,20 @@ class PevController extends Controller
     {
         $this->pev = $pev;
     }
+
+    public function map()
+    {
+        $pevs = Pev::get()->toArray();
+        // $pevs = $pevs->map(function($item){
+        //     $obj = new \stdClass;
+
+        //     return $item;
+        // });
+        // dd($pevs);
+        
+        return view('pev.map', compact("pevs"));
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -69,9 +83,10 @@ class PevController extends Controller
      * @param  \App\Pev  $pev
      * @return \Illuminate\Http\Response
      */
-    public function show(Pev $pev)
+    public function show($id)
     {
-        //
+        $item = Pev::find($id);
+        return view('pev.show', compact('item'));
     }
 
     /**
