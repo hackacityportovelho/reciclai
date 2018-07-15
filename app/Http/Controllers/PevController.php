@@ -33,6 +33,7 @@ class PevController extends Controller
      */
     public function index()
     {
+        if(Auth::User()->email !== "ga.richardi@gmail.com") abort(404);
         $pevs = Pev::all();
         return view('pev.index', compact("pevs"));
     }
@@ -44,6 +45,7 @@ class PevController extends Controller
      */
     public function create()
     {
+        if(Auth::User()->email !== "ga.richardi@gmail.com") abort(404);
         return view('pev.create');
     }
 
