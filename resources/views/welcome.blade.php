@@ -45,7 +45,8 @@
                                 <li><a href="#home">Home</a></li>
                             <li><a href="#service">Missão</a></li>
                             <li><a href="#objetivo">Objetivo</a></li>
-                            <li><a href="#blog">Cadastre-se</a></li>
+                            <li><a href="#objetivo">Objetivo</a></li>
+                            <li><a href="#patrocinadores">Patrocinadores</a></li>
                             {{-- <li><a href="#team">team</a></li> --}}
                             <li><a href="{{route('login')}}">Login</a></li>
                            <!-- Dropdown -->
@@ -141,7 +142,7 @@
                         
                     </div>
                     <div class="col-lg-6 about-right">
-                        {{-- <img class="img-fluid" src="img/about.png" alt=""> --}}
+                        {{-- <img class="img-fluid" src="img/about.jpg" alt=""> --}}
                     </div>
                 </div>
             </div>	
@@ -150,40 +151,42 @@
 
 
         <!-- Start project Area -->
-        {{-- <section class="project-area section-gap" id="project">
+        <section class="project-area section-gap" id="patrocinadores">
             <div class="container">
                 <div class="row d-flex justify-content-center">
                     <div class="menu-content pb-40 col-lg-8">
                         <div class="title text-center">
-                            <h1 class="mb-10">Latest Project on the go</h1>
-                            <p>O resido reciclável é uma ferramenta importante para o solução sustentável.</p>
+                            <h1 class="mb-10">Patrocinadores</h1>
+                            {{-- <p>O resido reciclável é uma ferramenta importante para o solução sustentável.</p> --}}
                         </div>
                     </div>
                 </div>						
                 <div class="row">
                     <div class="active-works-carousel mt-40">
                         <div class="item">
-                            <img class="img-fluid" src="img/project.jpg" alt="">
+                                <img class="img-fluid" src="img/google.png" alt="">
+
                             <div class="caption text-center mt-20">
-                                <h6 class="text-uppercase">Inspiração</h6>
+                                <h6 class="text-uppercase">20%</h6>
                                 <p></p>
                             </div>
                         </div>
                         <div class="item">
-                            <img class="img-fluid" src="img/project.jpg" alt="">
+                            <img class="img-fluid" src="img/campus.png" alt="">
                             <div class="caption text-center mt-20">
-                                <h6 class="text-uppercase">Crença</h6>
-                                <p>O coletivo é o caminho para solucionar questões ambientais dos resíduos  sustentáveis. Chamamos isso de responsabilidade consciente.</p>
+                                <h6 class="text-uppercase">10%</h6>
+                                <p></p>
                             </div>
                         </div>
                         <div class="item">
-                            <img class="img-fluid" src="img/project.jpg" alt="">
+                                <img class="img-fluid" src="img/academia.png" alt="">
+
                             <div class="caption text-center mt-20">
-                                <h6 class="text-uppercase">Propósito</h6>
-                                <p>Ativar uma rede articulando e integrando produto, consumo, e pós-consumo nas cadeias em que os resíduos recicláveis estão inseridos.</p>
+                                <h6 class="text-uppercase">15%</h6>
+                                <p></p>
                             </div>
                         </div>
-                        <div class="item">
+                        {{-- <div class="item">
                             <img class="img-fluid" src="img/project.jpg" alt="">
                             <div class="caption text-center mt-20">
                                 <h6 class="text-uppercase">Vector Illustration</h6>
@@ -196,11 +199,11 @@
                                 <h6 class="text-uppercase">Vector Illustration</h6>
                                 <p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have <br> allowed humanity to create slimmer, more portable technology.</p>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>	
-        </section> --}}
+        </section>
         <!-- End project Area -->
         
     
